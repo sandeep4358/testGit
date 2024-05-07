@@ -40,9 +40,10 @@ public class Main {
         List<Integer> intList = Arrays.stream(ar).boxed().collect(Collectors.toList());
 
         intList.stream().filter(i-> Collections.frequency(intList,i) >1).distinct().forEach(System.out::println);
-        
 
+    }
 
+    static void testConflict(){
 
     }
 
