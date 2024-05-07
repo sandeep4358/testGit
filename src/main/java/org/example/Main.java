@@ -35,7 +35,10 @@ public class Main {
     static void dublicate(){
         int [] ar = {1,2,3,5,1,2,3,4,6,5};
 
-        Arrays.stream(ar).
+        List<Integer> intList = Arrays.stream(ar).block().collect(Collectors.toList());
+
+        intList.stream().filter(i->Collections.frequency(intList,i) >1).distinct();
+        
 
 
 
