@@ -1,6 +1,8 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -35,9 +37,9 @@ public class Main {
     static void dublicate(){
         int [] ar = {1,2,3,5,1,2,3,4,6,5};
 
-        List<Integer> intList = Arrays.stream(ar).block().collect(Collectors.toList());
+        List<Integer> intList = Arrays.stream(ar).boxed().collect(Collectors.toList());
 
-        intList.stream().filter(i->Collections.frequency(intList,i) >1).distinct().foreach(System.out::println);
+        intList.stream().filter(i-> Collections.frequency(intList,i) >1).distinct().forEach(System.out::println);
         
 
 
