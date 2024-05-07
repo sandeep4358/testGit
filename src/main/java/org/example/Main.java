@@ -43,9 +43,8 @@ public class Main {
 
     }
 
-    static void testConflict(){
 
-    }
-
+static void testConflictRemote(){
+}
 
 }
