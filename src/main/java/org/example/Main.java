@@ -37,7 +37,7 @@ public class Main {
 
         List<Integer> intList = Arrays.stream(ar).block().collect(Collectors.toList());
 
-        intList.stream().filter(i->Collections.frequency(intList,i) >1).distinct();
+        intList.stream().filter(i->Collections.frequency(intList,i) >1).distinct().foreach(System.out::println);
         
 
 
