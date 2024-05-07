@@ -46,6 +46,7 @@ public class Main {
 
 static void testConflictRemote(){
     System.out.println("main branch changes are added");
+    System.out.println("first branch\" changes added.");
 }
 
 }
